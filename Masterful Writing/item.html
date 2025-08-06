@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Kimari McMillian">
+        <meta name="description" content="This page contains the title and description of your new project">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Item</title>
+        <link rel="icon" href="LeagueLady1.PNG" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Edit Item</h1>
+        </header>
+        
+        <hr>
+        <main>
+        <form action="groups.html" method="get">
+        <h2>Image</h2>
+        <p>Select an image</p>
+        <input type="file" name="file">
+
+        <hr>
+
+        <h2>General</h2>
+        <section class="inputs">
+            <label for="name">Name</label>
+            <br>
+            <textarea name="name" id="name" cols="30" rows="1" required></textarea>
+            <br>
+            <label for="desc">Description</label>
+            <br>
+            <textarea name="description" id="desc" cols="30" rows="1"></textarea>
+        </section>
+        <hr>
+
+        <h2>Attributes</h2>
+        <section class="dropdowns">
+            <aside>
+                <details>
+                    <summary>Item</summary>
+                    <p>
+                        <label for="purpose">Purpose</label>
+                        <br>
+                        <textarea name="purpose" id="purpose" cols="30" rows="1"></textarea>
+                        <br>
+                        <label for="special">Special Abilities and Properties</label>
+                        <br>
+                        <textarea name="special" id="special" cols="30" rows="1"></textarea>
+                        <br>
+                        <label for="collect">Collection</label>
+                        <br>
+                        <textarea name="collect" id="collect" cols="30" rows="1"></textarea>
+                        <br>
+                        <label for="production">Production</label>
+                        <br>
+                        <textarea name="production" id="production" cols="30" rows="1"></textarea>
+                        <br>
+                        <label for="comp">Composition</label>
+                        <br>
+                        <textarea name="comp" id="comp" cols="30" rows="1"></textarea>
+                        <br>
+                        <label for="value">Value</label>
+                        <br>
+                        <textarea name="value" id="value" cols="30" rows="1"></textarea>
+                        <br>
+                        <label for="rarity">Rarity</label>
+                        <br>
+                        <textarea name="rarity" id="rarity" cols="30" rows="1"></textarea>
+                        <br>
+                        <label for="occur">Occurence</label>
+                        <br>
+                        <textarea name="occurence" id="occur" cols="30" rows="1"></textarea>
+                        <br>
+                        <label for="methods">Detection Methods</label>
+                        <br>
+                        <textarea name="methods" id="methods" cols="30" rows="1"></textarea>
+                        <br>
+                        <label for="armaments">Armaments</label>
+                        <br>
+                        <textarea name="armaments" id="armaments" cols="30" rows="1"></textarea>
+                        <br>
+                        <label for="def">Defence</label>
+                        <br>
+                        <textarea name="defence" id="def" cols="30" rows="1"></textarea>
+                        <br>
+                        <label for="other">Other Equipment</label>
+                        <br>
+                        <textarea name="other" id="other" cols="30" rows="1"></textarea>
+                        <br>
+                    </p>
+                </details>
+            </aside>
+            <br>
+            <aside>
+                <details>
+                    <summary>History</summary>
+                    <p>
+                        <label for="hist">History</label>
+                        <br>
+                        <textarea name="history" id="hist" cols="30" rows="1"></textarea>
+                        <br>
+                        <label for="origin">Origin</label>
+                        <br>
+                        <textarea name="origin" id="origin" cols="30" rows="1"></textarea>
+                        <br>
+                        <label for="owners">Notable Owners</label>
+                        <br>
+                        <textarea name="owners" id="owners" cols="30" rows="1"></textarea>
+                        <br>
+                    </p>
+                </details>
+            </aside>
+        </section>
+        <hr>
+
+        <h2>Custom fields</h2>
+        <p>Custom fields</p>
+
+        <hr>
+
+        <h2>Notes</h2>
+        <button>Save</button>
+        </form>
+        </main>
+    </body>

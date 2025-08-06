@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --BGCOLOR: #333;
+    --ALTBGCOLOR: #222;
+    --FF: 'Roboto', 'Trebuchet MS', Cambria, Arial, sans-serif;
+    --PADDING: padding: 1rem;
+    --SHADOWS: 0 6px -5px var(--ALTBGCOLOR);
+    --FS: min(2.25rem, 3vh);
+    --FS-XL: 3rem;
+    --FSCLAMP: clamp(1.75rem, 3vh, 2.25rem);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --BGCOLOR: #222;
+        --ALTBGCOLOR: #111;
+    }
+}
+img {
+    display: block;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #333;
+    background-image: linear-gradient(to bottom, var(--BGCOLOR), var(--ALTBGCOLOR));
+    color: whitesmoke;
+    min-height: 100vh;
+    border: 8px solid gray;
+    font-family: var(--FF);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+}
+
+section {
+    flex-grow: 1;
+}
+
+a {
+    color: rgb(182, 205, 214);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(182, 205, 214);
+}
+
+a:hover, a:active, a:focus {
+    color:#ffc7e5;
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0px;
+    padding-left: 1rem;
+}
+
+h3 {
+    text-align: left;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+hr {
+    color: gray;
+    height: 1rem;
+    border-color: gray;
+    border-style: solid;
+    border-bottom: gray;
+}
+
+ul {
+    list-style-type: square;
+    text-align: left;
+    color: gray;
+    list-style-image: url("../img/Logo.png");
+    list-style: square url("../img/Logo.png");
+}
+
+
+
+.title {
+    background-color: rgb(24, 0, 31);
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    margin: 0px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.floater {
+    float: right;
+}
+
+.dropdowns {
+    padding: 1rem;
+}
+
+.bigger {
+    font-size: 1.5rem;
+}
+
+.inputs {
+    padding: 1rem;
+}
+
+.links {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.padded {
+    padding: 2rem;
+}
+
+.padded img {
+    width: 25%;
+    height: auto;
+    border: double gray;
+    border-radius: 8%;
+}
+
+.buttons {
+    margin: 1rem;
+    background-color: rgb(24, 0, 31);
+    color: white;
+    border-radius: 20px;
+    border-color: rgb(157, 0, 242);
+    padding: 0.5rem;
+}
+.table {
+    line-height: 4;
+}
+
+.cyan {
+    background: rgb(0, 116, 139);
+}
+
+.center {
+    text-align: center;
+}
+
+/* .column {
+    columns: 2 200px;
+}
+
+.column textarea {
+    margin-right: auto;
+    margin-left: 2rem;
+} */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    gap: 2rem;
+}
+
+.purp {
+    background-color: rgb(68, 44, 80);
+}
+
+.chapter {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "cont cont cont cont scene scene sidebar sidebar";
+    gap: 2rem;
+}
+
+.el {
+    background-color: green;
+    display: grid;
+    place-content: center;
+}
+
+.cont {
+    grid-area: cont;
+}
+
+.scene {
+    grid-area: scene;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: aqua;
+}
+
+.inline-images {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* .grid:first-child {
+    background-color: rgb(68, 44, 80);
+} */
+
+/* .flexbox {
+    margin-inline: auto;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .items {
+    margin-inline: 1rem;
+    display: inline-block;
+    justify-content: center;
+} */
+
+
+
+
+/* Small Screen */
+@media screen and (min-width: 1px) and (max-width: 649px) {
+    body {
+        background-color: green;
+        background-image: linear-gradient(whitesmoke, green);
+    }
+
+    .floater {
+        display: none;
+    }
+
+    .padded img {
+        width: 50%;
+        height: auto;
+}
+ 
+/* Medium Screen */
+@media screen and (min-width: 650px) {
+    body {
+        background-color: firebrick;
+        background-image: linear-gradient(firebrick, black);
+    }
+    .floater {
+        visibility: visible;
+    }
+}
+
+/* Large Screen */
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: goldenrod;
+        background-image: linear-gradient(goldenrod, black);
+    }
+}
+
+/* @media screen and (min-width: 576px) {
+    main {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    main section {
+        width: calc(70% - 5px);
+    }
+
+    main aside {
+        width: calc(30% - 5px);
+    }
+} */
+
+/* .aclass:hover: :before {
+    content: attr(data-aclass);
+    white-space: nowrap;
+    border-radius: 15px;
+} */
