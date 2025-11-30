@@ -22,9 +22,11 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --DARKCOLOR: #332820;
-        --ALTDARKCOLOR: #5A4D40;
-        --ALTTEXTCOLOR: #EFEDEA;
+        --DARKCOLOR: #121212;
+        --ALTDARKCOLOR: #1c082d;
+        --ALTTEXTCOLOR: #ffffff;
+        --ALTOTHERCOLOR: #211429;
+        --ALTALTBGCOLOR: #432e48;
     }
 }
 
@@ -34,7 +36,9 @@ body {
     min-height: 100vh;
     max-width: 100vw;
     background-color: var(--BGCOLOR);
+    background-color: var(--DARKCOLOR);
     color: var(--COLOR);
+    color: var(--ALTTEXTCOLOR);
     font-family: var(--FF);
 }
 
@@ -45,11 +49,13 @@ main {
     padding: 0.4rem;
     border-radius: 1rem;
     background-color: var(--ALTBGCOLOR);
+    background-color: var(--ALTALTBGCOLOR);
 }
 
 header {
     text-align: center;
     background-color: var(--OTHERCOLOR);
+    background-color: var(--ALTOTHERCOLOR);
     color: var(--ALTCOLOR);
     font-size: 3vh;
     padding: 1vh;
@@ -79,7 +85,7 @@ a {
 
 hr {
     padding: 0.2rem;
-    background-color:#696460;
+    background-color:#111111;
 }
 
 h2 {
@@ -142,6 +148,7 @@ textarea:focus {
 
 .heading {
     background-color: var(--COLOR);
+    background-color: var(--ALTOTHERCOLOR);
     color: var(--ALTCOLOR);
     display: flex;
     justify-content: center;
@@ -182,6 +189,7 @@ textarea:focus {
 
 .subheading h2 {
     background-color: var(--COLOR);
+    background-color: var(--ALTDARKCOLOR);
     color: var(--ALTCOLOR);
     box-shadow: 5px 5px #332820;
     margin: 1rem;
