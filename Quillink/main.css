@@ -11,12 +11,12 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --BGCOLOR: #f5f0e7;
-        --ALTBGCOLOR: #d8cdc0;
-        --COLOR: #574940;
+        --BGCOLOR: #FCE5CC;
+        --ALTBGCOLOR: #D0ADC4;
+        --COLOR: #1e0e2b;
         --ALTCOLOR: #ffffff;
-        --TEXTCOLOR: #201101;
-        --OTHERCOLOR: #725e4e;
+        --TEXTCOLOR: #1e0e2b;
+        --OTHERCOLOR: #744B93;
     }
 }
 
@@ -127,7 +127,8 @@ select {
 }
 
 textarea {
-    border-style: solid;
+    border-style: none;
+    pointer-events: none;
 }
 
 textarea:focus {

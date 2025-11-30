@@ -296,7 +296,8 @@ ul {
 } */
 
 /* .aclass:hover: :before {
-    content: attr(data-aclass);
-    white-space: nowrap;
-    border-radius: 15px;
-} */
+        content: attr(data-aclass);
+        white-space: nowrap;
+        border-radius: 15px;
+    } 
+*/
